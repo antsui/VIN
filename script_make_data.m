@@ -139,7 +139,7 @@ batch_im_data = batch_im_data(1:numBatches-1,:);
 batch_value_data = batch_value_data(1:numBatches-1,:);
 %% save data
 disp('saving data');
-set_var('data_dir', '~/Data/LearnTraj/');
+set_var('data_dir', './mydata/');
 set_var('data_file', 'data.mat');          % store training data variables
-save([data_dir data_file],'im_data','state_onehot_data','label_data','value_data',...
+save([data_dir  data_file],'im_data','state_onehot_data','label_data','value_data',...
     'state_xy_data','state_x_data','state_y_data','batch_label_data','batch_im_data','batch_value_data');

@@ -3,7 +3,6 @@ clear all;
 data_dir = './data';
 dodraw = false;
 %% Generate 8x8 map data
-data_dir = './mydata/';
 data_file = 'gridworld_8.mat'; 
 size_1 = 8;
 size_2 = 8;
@@ -20,7 +19,7 @@ script_make_data;
 clear all;
 
 %% Generate 16x16 map data
-data_dir = './mydata/';
+data_dir = './data/';
 data_file = 'gridworld_16.mat'; 
 size_1 = 16;
 size_2 = 16;
@@ -37,7 +36,7 @@ script_make_data;
 clear all;
 
 %% Generate 28x28 map data
-data_dir = './mydata/';
+data_dir = './data/';
 data_file = 'gridworld_28.mat'; 
 size_1 = 28;
 size_2 = 28;
