@@ -52,3 +52,22 @@ zero_min_action = true;
 state_batch_size = 1;
 script_make_data;
 clear all;
+
+%% Generate 30x30 map data
+for i = 9:19
+    data_dir = './mydata/';
+    data_file = ['gridworld_30_', num2str(i), '.mat'];
+    size_1 = 30;
+    size_2 = 30;
+    add_border = true;
+    maxObs = 50;
+    maxObsSize = 2.0;
+    Ndomains = 1000;
+    Ntrajs = 7;
+    prior = 'reward';
+    rand_goal = true;
+    zero_min_action = true;
+    state_batch_size = 1;
+    script_make_data;
+    clear all;
+end

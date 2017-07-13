@@ -1,4 +1,4 @@
-function [states_xy, states_one_hot] = SampleGraphTraj(M,Ns)
+function [states_xy, states_one_hot] = SampleGraphTraj_vi(M,Ns)
 % sample Ns states trajectories from random nodes in graph object M to goal
 % return states_xy: cell array of trajectories in xy-space
 %        states_one_hot: cell array of trajectories in one-hot vectors for
@@ -38,5 +38,3 @@ for i = 1:length(states)
     states_one_hot{i} = [row_mat col_mat];
     states_xy{i} = [r,c];
 end
-
-a=1;
